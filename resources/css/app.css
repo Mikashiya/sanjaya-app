@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* 
+Color Pallete
+
+White: F6F6F6
+Black: 111111
+Dark Gray: 2F2F2F
+Yellow: FFCB74
+*/
+
+body {
+    @apply bg-[#F6F6F6] text-[#111111] antialiased font-sans;
+}
